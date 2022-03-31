@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HomePage</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap'>
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="modal-style.css">
+<link rel="stylesheet" href="toggle.css">
+<link rel="stylesheet" href="../Plus-event/style.css">
+<link rel="stylesheet" href="style-popup.css">
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+
+<a href="../Enter_Page/index.html">
+  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="48" height="48"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M72.53383,101.2005c4.19967,-4.19967 45.967,-45.967 50.16667,-50.16667c8.39933,-8.39933 8.39933,-22.00883 0,-30.40817c-8.39933,-8.39933 -22.00883,-8.39933 -30.40817,0c-4.19967,4.19967 -45.967,45.967 -50.16667,50.16667c-8.39933,8.39933 -8.39933,22.00883 0,30.40817c8.39933,8.39933 22.016,8.39933 30.40817,0z" opacity="0.35"></path><path d="M42.13283,101.2005c4.19967,4.19967 45.967,45.967 50.16667,50.16667c8.39933,8.39933 22.00883,8.39933 30.40817,0c8.39933,-8.39933 8.39933,-22.00883 0,-30.40817c-4.19967,-4.19967 -45.967,-45.967 -50.16667,-50.16667c-8.39933,-8.39933 -22.00883,-8.39933 -30.40817,0c-8.39933,8.39933 -8.39933,22.016 0,30.40817z"></path></g></g></svg>
+</a>
+<!-- partial:index.partial.html -->
+<div class="sc-box">
+  <div class="sc-container">
+    <h1 class="sc-main-title">Today's Events</h1>
+    <div class="sc-searchbox">
+      <input required type="text" 
+             class="sc-searchbox-field"/>
+      <div class="sc-searchbox-placeholder">
+        
+        <i class="sc-searchbox-placeholder-icon fas fa-search"></i>
+        <p class="sc-searchbox-placeholder-text">Cerca eventi</p>
+      </div>
+    </div>
+  </div>
+
+    <a href="#open-modal"><div  class="sc-container sc-timeline sc-actionsheet-trigger" event="launch" goto="launch">
+      <div class="sc-timeline-item" event="launch">
+       <i class="sc-timeline-icon fas fa-utensils"></i></a>
+       <div class="sc-timeline-info">
+          <div class="sc-timeline-details">
+            <span class="sc-timeline-time">12:00 PM</span>
+            <br>
+            
+            <span class="sc-timeline-duration">1 h<span>
+          </div>
+          <h3 class="sc-timeline-title">Lunch</h3>
+        </div>
+      </div>
+
+      <a href="#open-modal2" class="modal2"><div class="sc-timeline-item sc-actionsheet-trigger" event="meeting" goto="meeting"> 
+        <i class="sc-timeline-icon fas fa-gamepad"></i></a>
+        <div class="sc-timeline-info">
+          <div class="sc-timeline-details">
+            <span class="sc-timeline-time">15:00 PM</span>
+           
+            <span class="sc-timeline-duration">3 h<span>
+          </div>
+          <h3 class="sc-timeline-title">Game</h3>
+        </div>
+      </div>
+      
+      <a href="#open-modal3" class="modal3"><div class="sc-timeline-item sc-actionsheet-trigger" event="bike" goto="bike">
+        <i class="sc-timeline-icon fas fa-bicycle"></i></a> 
+        <div class="sc-timeline-info">
+          <div class="sc-timeline-details">
+            <span class="sc-timeline-time">16:30 PM</span>
+            
+            <span class="sc-timeline-duration">45 m<span>
+          </div>
+    
+          
+          <h3 class="sc-timeline-title">Bike</h3>
+        </div>
+      </div>
+  </div>
+
+  <div class="sc-bottom-bar" >
+   <a class="sc-menu-item sc-current" href="../Profile/index.html" >
+      <i class="fas fa-grin-wink"></i>
+    </a>
+    <a class="sc-fab" >
+      <a href="#open-modal4" class="plus"><i class="fas fa-plus"></i></a>
+    </a>
+    <a class="sc-menu-item" href="../Calendar/index.html">
+      <i class="fas fa-calendar-alt"></i>
+    </a>
+  </div>
+
+         <!-------------------- Event 1°---------------------------> 
+      
+        <div id="open-modal" class="modal-window">
+          <div>
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <i class="sc-timeline-icon1 fas fa-utensils"></i>
+            <div class="desc">Andiamo a pranzo ?</div>
+            <br>
+            <a href="https://goo.gl/maps/48NcHgStyFVNnR4z9"><img class="position1" src="https://img.icons8.com/officexs/21/000000/place-marker.png"/></a>
+            <div><small class="assente">assenza</small><small class="presente">presente</small></div>
+
+              <label class="switch">
+              <input type="checkbox" >
+              <div>
+                <span></span>
+              </div>
+              
+          </label>
+
+            </div>
+            </div>
+        </div>
+        
+         <!-------------------- Event 2°---------------------------> 
+
+         <div id="open-modal2" class="modal-window">
+          <div>
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <i class="sc-timeline-icon2 fas fa-gamepad"></i>
+            <div>Giochiamo insieme ?</div>
+            <br>
+            <a href="https://goo.gl/maps/sHJdCPrUJPL1eJQc9"><img class="position2" src="https://img.icons8.com/officexs/23/000000/place-marker.png"/></a>
+            <div><small class="assente">assenza</small><small class="presente">presente</small></div>
+            
+              <label class="switch">
+              <input type="checkbox" >
+              <div>
+                <span></span>
+              </div>
+              
+          </label>
+
+            </div>
+            </div>
+        </div>
+
+        
+         <!-------------------- Event 2°---------------------------> 
+
+         
+         <div id="open-modal3" class="modal-window">
+          <div>
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <i class="sc-timeline-icon3 fas fa-bicycle"></i>
+            <div>Andiamo a fare un giro in bici ?</div>
+            <br>
+            <a href="https://goo.gl/maps/LQGxKhX1ez6H9RkZA"><img class="position3" src="https://img.icons8.com/officexs/23/000000/place-marker.png"/></a>
+            <div><small class="assente">assenza</small><small class="presente">presente</small></div>
+
+              <label class="switch">
+              <input type="checkbox" >
+              <div>
+                <span></span>
+              </div>
+              
+          </label>
+
+            </div>
+            </div>
+        </div>
+
+      
+         <!-------------------- Plus event ---------------------------> 
+
+         
+         <div id="open-modal4" class="modal-window4">
+          <div>
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <i class="sc-timeline-icon4 fas fa-calendar-alt"></i>
+            
+
+<img id="snackbar" class="check" src="../GIF/icons8-verificato-unscreen.gif" alt="">
+
+                  <label class="form" for="Nome Evento">Nome Evento</label>
+                  <input class="input" id="Nome Evento" type="text" name="Nome Evento"/>
+           
+     
+                  <label class="form" for="Orario">Orario</label>
+                  <input class="input2" for="Orario" type="time" name="Orario"/>
+                  
+                  <label class="form3" for="Data">Data</label>
+                  <input class="input3" for="Data" type="date" name="Data"/>
+      
+                  <label class="form4" for="Luogo">Luogo</label>
+                  <input class="input4" id="Luogo" type="url" name="Luogo"/>
+                 
+                    <input onclick="myFunction()" id="submit" class="btn" type="submit" name="invia"/>
+
+                  
+         
+            </div>
+            </div>
+        </div>
+         <!-------------------- End---------------------------> 
+
+            </div>
+          </div>
+        </div>
+</div>
+
+
+    
+  <script  src="home.js"></script>
+  <script  src="script.js"></script>
+
+</body>
+</html>

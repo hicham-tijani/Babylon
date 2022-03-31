@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calendar Events</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main-container-wrapper" class="container custom-scrollbar">
+    <header>
+      <button class="header__btn header__btn--left" title="Menu">       
+  <a href="../HomePAge/homepage.html">
+    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="29" height="29"
+  viewBox="0 0 172 172"
+  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M72.53383,101.2005c4.19967,-4.19967 45.967,-45.967 50.16667,-50.16667c8.39933,-8.39933 8.39933,-22.00883 0,-30.40817c-8.39933,-8.39933 -22.00883,-8.39933 -30.40817,0c-4.19967,4.19967 -45.967,45.967 -50.16667,50.16667c-8.39933,8.39933 -8.39933,22.00883 0,30.40817c8.39933,8.39933 22.016,8.39933 30.40817,0z" opacity="0.35"></path><path d="M42.13283,101.2005c4.19967,4.19967 45.967,45.967 50.16667,50.16667c8.39933,8.39933 22.00883,8.39933 30.40817,0c8.39933,-8.39933 8.39933,-22.00883 0,-30.40817c-4.19967,-4.19967 -45.967,-45.967 -50.16667,-50.16667c-8.39933,-8.39933 -22.00883,-8.39933 -30.40817,0c-8.39933,8.39933 -8.39933,22.016 0,30.40817z"></path></g></g></svg>
+  </a>
+      </button>
+      <button  class="header__btn header__btn--right" title="Add event">
+        <a href="../Enter_Page/index.html">
+          <svg class="home" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="28" height="28"
+          viewBox="0 0 172 172"
+          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M141.54167,154.08333h-32.25c-4.94858,0 -8.95833,-4.00975 -8.95833,-8.95833v-32.25c0,-3.95958 -3.20708,-7.16667 -7.16667,-7.16667h-14.33333c-3.95958,0 -7.16667,3.20708 -7.16667,7.16667v32.25c0,4.94858 -4.00975,8.95833 -8.95833,8.95833h-32.25c-4.94858,0 -8.95833,-4.00975 -8.95833,-8.95833v-68.39508c0,-8.23808 3.77683,-16.02108 10.24475,-21.11658l50.92633,-40.12975c1.95292,-1.53367 4.70492,-1.53367 6.65425,0l50.9335,40.12975c6.46792,5.0955 10.24117,12.87492 10.24117,21.10942v68.40225c0,4.94858 -4.00975,8.95833 -8.95833,8.95833z"></path></g></g></svg>
+        </a>
+      </button>
+    </header>
+
+    <main>  
+
+      <div class="calendar-container">
+        <div class="calendar-container__header" class="overflow">
+          <button class="calendar-container__btn calendar-container__btn--left" title="Previous">
+            <i class="icon ion-ios-arrow-back"></i>
+          </button>
+          <h2 class="calendar-container__title">Aprile 2022</h2>
+          <button class="calendar-container__btn calendar-container__btn--right" title="Next">
+            <i class="icon ion-ios-arrow-forward"></i>
+          </button>
+        </div>
+        <div class="calendar-container__body">
+          <div class="calendar-table">
+            <div class="calendar-table__header">
+              <div class="calendar-table__row">
+                <div class="calendar-table__col">L</div>
+                <div class="calendar-table__col">M</div>
+                <div class="calendar-table__col">M</div>
+                <div class="calendar-table__col">G</div>
+                <div class="calendar-table__col">V</div>
+                <div class="calendar-table__col">S</div>
+                <div class="calendar-table__col">D</div>
+              </div>
+            </div>
+            <div class="calendar-table__body">
+              <div class="calendar-table__row">
+                <div class="calendar-table__col calendar-table__inactive">
+                  <div class="calendar-table__item">
+                    <span> 28</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col calendar-table__inactive">
+                  <div class="calendar-table__item">
+                    <span>29</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col calendar-table__inactive">
+                  <div class="calendar-table__item">
+                    <span>30</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col calendar-table__inactive">
+                  <div class="calendar-table__item">
+                    <span>31</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>1</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col calendar-table__event">
+                  <div class="calendar-table__item">
+                    <span>2</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar-table__row">
+                <div class="calendar-table__col calendar-table__event">
+                  <div class="calendar-table__item">
+                    <span>4</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>5</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>6</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>6</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>7</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>8</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>9</span>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar-table__row">
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>10</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>11</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--start">
+                  <div class="calendar-table__item">
+                    <span>12</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col calendar-table__event calendar-table__event--long">
+                  <div class="calendar-table__item">
+                    <span>13</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--end">
+                  <div class="calendar-table__item">
+                    <span>14</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>15</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>16</span>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar-table__row">
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>17</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>18</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>29</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>20</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>21</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>22</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--start">
+                  <div class="calendar-table__item">
+                    <span>23</span>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar-table__row">
+                <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--end">
+                  <div class="calendar-table__item">
+                    <span>24</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>25</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>26</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col">
+                  <div class="calendar-table__item">
+                    <span>27</span>
+                  </div>
+                </div>
+                <div class="calendar-table__row">
+                  <div class="calendar-table__col calendar-table__event">
+                    <div class="calendar-table__item">
+                    <span>28</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col ">
+                  <div class="calendar-table__item">
+                    <span>29</span>
+                  </div>
+                </div>
+                <div class="calendar-table__col ">
+                  <div class="calendar-table__item">
+                    <span>30</span>
+                  </div>
+                </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+     <!-------------------------- Event ---------------------------------------> 
+     
+   
+  <div class="main-container-wrapper2">
+      <div class="events-container">
+        <span class="events__title">Upcoming events this month</span>
+        <ul class="events__list">
+          <li class="events__item">
+            <div class="events__item--left">
+              <span class="events__name">Torneo di Calcio</span>
+              <span class="events__date">Apr 2</span>
+            </div>
+            <span class="events__tag">16:00</span>
+          </li>
+          <li class="events__item">
+            <div class="events__item--left">
+              <span class="events__name">Plogging</span>
+              <span class="events__date">Apr 4</span>
+            </div>
+            <span class="events__tag">10:00</span>
+          </li>
+          <li class="events__item">
+            <div class="events__item--left">
+              <span class="events__name">In Bici x Milano</span>
+              <span class="events__date">Apr 12 - Apr 14</span>
+            </div>
+            <span class="events__tag events__tag--highlighted">All day</span>
+          </li>
+          <li class="events__item">
+            <div class="events__item--left">
+              <span class="events__name">Aperitivo tra Amici</span>
+              <span class="events__date">Apr 23</span>
+            </div>
+            <span class="events__tag">18:00</span>
+          </li>
+          <li class="events__item">
+            <div class="events__item--left">
+              <span class="events__name">Studiamo Insieme</span>
+              <span class="events__date">Apr 24</span>
+            </div>
+            <span class="events__tag1">PM</span>
+          </li>
+          <li class="events__item">
+            <div class="events__item--left">
+              <span class="events__name">Chi all'Alcatraz ?</span>
+              <span class="events__date">Apr 28</span>
+            </div>
+            <span class="events__tag2">late night</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+<!-- partial -->
+
+    </main>
+  </div>
+ <script src="script.js"></script>
+</body>
+</html>
